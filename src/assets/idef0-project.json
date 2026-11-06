@@ -1,0 +1,154 @@
+{
+  "id": "default",
+  "rootId": "A-0",
+  "childMap": {},
+  "diagrams": {
+    "A-0": {
+      "id": "A-0",
+      "title": "Автоматизация учета приема, диагностики и лечения животных",
+      "boxes": [
+        {
+          "id": "e1-k1s",
+          "label": "Function 1",
+          "nodeNumber": "A-01",
+          "description": "",
+          "x": 1033.6260330578511,
+          "y": 129.03925619834712,
+          "width": 220,
+          "height": 110,
+          "childDiagramId": null
+        }
+      ],
+      "arrows": [
+        {
+          "id": "a01",
+          "label": "Данные владельца и питомца",
+          "source": "ext-owner",
+          "target": "b-a0",
+          "type": "input"
+        },
+        {
+          "id": "a02",
+          "label": "Запрос на прием",
+          "source": "ext-request",
+          "target": "b-a0",
+          "type": "input"
+        },
+        {
+          "id": "a03",
+          "label": "Правила работы клиники",
+          "source": "ext-rules",
+          "target": "b-a0",
+          "type": "control"
+        },
+        {
+          "id": "a04",
+          "label": "Медицинские протоколы",
+          "source": "ext-protocols",
+          "target": "b-a0",
+          "type": "control"
+        },
+        {
+          "id": "a05",
+          "label": "Электронные медицинские карты",
+          "source": "b-a0",
+          "target": "ext-cards",
+          "type": "output"
+        },
+        {
+          "id": "a06",
+          "label": "Расписание врачей",
+          "source": "b-a0",
+          "target": "ext-schedule",
+          "type": "output"
+        },
+        {
+          "id": "a07",
+          "label": "Сведения о препаратах",
+          "source": "b-a0",
+          "target": "ext-meds",
+          "type": "output"
+        },
+        {
+          "id": "a08",
+          "label": "Информационная система",
+          "source": "ext-is",
+          "target": "b-a0",
+          "type": "mechanism"
+        },
+        {
+          "id": "a09",
+          "label": "Персонал клиники",
+          "source": "ext-staff",
+          "target": "b-a0",
+          "type": "mechanism"
+        },
+        {
+          "id": "e2-pr1",
+          "label": "O1",
+          "type": "output",
+          "sourceBoxId": "e1-k1s",
+          "targetBoxId": null,
+          "targetSide": null
+        },
+        {
+          "id": "e3-1zh",
+          "label": "O2",
+          "type": "output",
+          "sourceBoxId": "e1-k1s",
+          "targetBoxId": null,
+          "targetSide": null
+        },
+        {
+          "id": "e4-hc9",
+          "label": "C1",
+          "type": "control",
+          "sourceBoxId": null,
+          "targetBoxId": "e1-k1s",
+          "targetSide": null
+        },
+        {
+          "id": "e5-1ad",
+          "label": "C2",
+          "type": "control",
+          "sourceBoxId": null,
+          "targetBoxId": "e1-k1s",
+          "targetSide": null
+        },
+        {
+          "id": "e6-6ei",
+          "label": "I1",
+          "type": "input",
+          "sourceBoxId": null,
+          "targetBoxId": "e1-k1s",
+          "targetSide": null
+        },
+        {
+          "id": "e7-uf4",
+          "label": "I2",
+          "type": "input",
+          "sourceBoxId": null,
+          "targetBoxId": "e1-k1s",
+          "targetSide": null
+        },
+        {
+          "id": "e8-gmc",
+          "label": "M1",
+          "type": "mechanism",
+          "sourceBoxId": null,
+          "targetBoxId": "e1-k1s",
+          "targetSide": null
+        },
+        {
+          "id": "e9-1sn",
+          "label": "M2",
+          "type": "mechanism",
+          "sourceBoxId": null,
+          "targetBoxId": "e1-k1s",
+          "targetSide": null
+        }
+      ],
+      "boundaryArrows": []
+    }
+  }
+}

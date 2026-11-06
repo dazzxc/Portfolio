@@ -1,0 +1,43 @@
+:root {
+  --color-ice: #EFF8FF;
+  --color-lime: #BBEF1F;
+  --color-void: #0D0303;
+  --color-neon: #FF0055;
+
+  --color-text: var(--color-ice);
+  --color-subtitle: var(--color-lime);
+  --color-primary: var(--color-neon);
+
+  --color-background: var(--color-void);
+
+  --button-text: var(--color-ice);
+  --button-border: rgba(187, 239, 31, 0.5);
+  --button-hover: var(--color-neon);
+  --button-hover-text: #ffffff;
+  --button-shadow: rgba(255, 0, 85, 0.4);
+
+  --color-form: rgba(239, 248, 255, 0.05);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background:
+    radial-gradient(circle at 20% 35%,
+      rgba(187, 239, 31, 0.15),
+      transparent 40%),
+    radial-gradient(circle at 75% 75%,
+      rgba(255, 0, 85, 0.15),
+      transparent 45%),
+    var(--color-void);
+}
+
+html {
+  scroll-behavior: smooth;
+}
